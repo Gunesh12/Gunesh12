@@ -2,18 +2,20 @@ import java.util.Scanner;
 
 public class Palindrome {
     public static void main(String[] args) {
+        int n,rev;
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the number");
-        int n=sc.nextInt();
+        System.out.println("Enter the Number");
+        n=sc.nextInt();
         int temp=n;
-        int rev= temp;
+        rev=temp;
         if(temp==rev)
         {
-            System.out.println("Palindrome");
-
+            System.out.println("The Number is Palindrome");
         }
         else {
-            System.out.println("Not Palindrome");
+            System.out.println("The Number is not palindrome");
         }
+
+
     }
 }

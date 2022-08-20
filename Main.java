@@ -1,16 +1,26 @@
-import java.lang.*;
-import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the num1 \n");
-        int num=sc.nextInt();
-        if(num%2!=0)
+        int salary=200000;
+      // if(salary>100000)
+        //{
+          //  salary=salary+10000;
+        //}
+        //lse {
+          //  salary=salary-100000;
+        //}
+        //System.out.println("The Salary is " + salary); */
+        if(salary>100000)
         {
-            System.out.println("Odd");
+            salary+=1000;
+
+        } else if (salary>150000) {
+            salary +=1000;
         }
         else {
-            System.out.println("Even");
+            salary+=122222;
         }
+        System.out.println(salary);
+
+
     }
 }

@@ -2,15 +2,24 @@ import java.util.Scanner;
 
 public class LargestNumber {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the num1");
-        int num1=sc.nextInt();
-        System.out.println("Enter the num2");
-        int num2=sc.nextInt();
+        Scanner scanner=new Scanner(System.in);
+        int num1= scanner.nextInt();
+        int num2= scanner.nextInt();
+        int num3= scanner.nextInt();
+       /* int max;
         if(num1>num2)
-            System.out.println("Largest number");
-        else
-            System.out.println("Small Number");
+        {
+            max=num1;
+        } else if (num2>num3) {
+            max=num2;
+        }
+        else {
+            max=num3;
+        }
+        System.out.println("The Largest Number is " +max);
 
+        */
+        int max=Math.max(num3,Math.max(num1,num2));
+        System.out.println(max);
     }
 }
