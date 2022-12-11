@@ -1,0 +1,98 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x = 0;
+    float y = 1.4;
+    char z = 'a';
+    string name;
+    cin>>name;
+    cout<<"Hello " +name;
+   
+    return 0;
+}
+//user defined data types
+// struct,union,class
+//struct userInfo()
+/*
+int id;
+string name;
+
+*/
+
+
+
+
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+struct student{
+    int rollno;
+    string name;
+};
+student printinfo(student s1)
+{
+    cout<<s1.rollno;
+    cout<<endl;
+    cout<<s1.name;
+    s1.name= "ganesh";
+    return s1;
+}
+int main()
+{
+    student s1;
+    cin>>s1.rollno;
+    cin>>s1.name;
+    
+    cout<<s1.rollno;
+    cout<<endl;
+    cout<<s1.name;
+    return  0;
+}
+
+---------------------Inheritance----------------------
+inheritance properities from the parent.
+
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+class Animal
+{
+    protected:
+    int legs;
+};
+class Dogs: public Animal
+{
+    public: 
+     void printinfo()
+     {
+         cout<< legs<<endl;
+     }
+};
+int main()
+{
+    Dogs obj;
+    obj.printinfo();
+    return 0;
+}
+ 
