@@ -1,0 +1,128 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x = 0;
+    float y = 1.4;
+    char z = 'a';
+    string name;
+    cin>>name;
+    cout<<"Hello " +name;
+   
+    return 0;
+}
+//user defined data types
+// struct,union,class
+//struct userInfo()
+/*
+int id;
+string name;
+
+*/
+
+
+
+
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+struct student{
+    int rollno;
+    string name;
+};
+student printinfo(student s1)
+{
+    cout<<s1.rollno;
+    cout<<endl;
+    cout<<s1.name;
+    s1.name= "ganesh";
+    return s1;
+}
+int main()
+{
+    student s1;
+    cin>>s1.rollno;
+    cin>>s1.name;
+    
+    cout<<s1.rollno;
+    cout<<endl;
+    cout<<s1.name;
+    return  0;
+}
+
+-----------------OOPS------------------------
+
+Clasees and objects:
+
+#include<iostream>
+using namespace std;
+
+class Employee
+{
+  public:
+  int id;
+  string Name;
+  string Company;
+  void Introduce()
+  {
+      cout<<Name<<endl;
+      cout<<id<<endl;
+      cout<<Company<<endl;
+  }
+};
+int main()";
+{
+    Employee e1;
+    e1.id = 3;
+    e1.Name = "Ganesh";
+    e1.Company = "IBM
+    e1.Introduce();
+}
+
+
+-------------Constructors--------------------
+1.Constructors does not have return type.
+2.Constructor has same name as class and it has to be public
+
+
+#include<iostream>
+using namespace std;
+
+class Employee
+{
+  public:
+  int id;
+  string Name;
+  string Company;
+  void Introduce()
+  {
+      cout<<Name<<endl;
+      cout<<id<<endl;
+      cout<<Company<<endl;
+  }
+  public:
+  Employee(int Id, string name, string company) //Employee Constructor
+  {
+      id = Id;
+      Name = name;
+      Company = company;
+  }
+};
+int main()
+{
+   Employee e1 = Employee(1, "Ganesh", "IBM");  // construct the object
+   e1.Introduce();
+}
+
+------------------Encapsulation----------------------------------
